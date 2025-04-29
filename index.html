@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老登滚出我的书单</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>老登滚出我的书单</h1>
+        </header>
+        
+        
+        <div class="controls">
+            <input type="text" class="search-box" id="searchInput" placeholder="搜索书名或作者...">
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="read">已读</button>
+                <button class="filter-btn" data-filter="unread">未读</button>
+            </div>
+        </div>
+        
+        <div id="booksList">
+            <!-- 书籍列表将通过JS动态生成 -->
+        </div>
+
+        <div class="readme">
+            <ul>
+                <li>仅列女性作者/文艺工作者作品</li>
+                <li>已读我一般有电子书</li>
+                <li>多多推书/作品！</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>© 2025 老登滚出我的书单 | 最后更新: <span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+
+    <script src="dataLoader.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
